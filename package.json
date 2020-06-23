@@ -1,0 +1,36 @@
+{
+  "name": "neurochart",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Lars Karbo <mail@larskarbo.no>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node fuse.ts"
+  },
+  "devDependencies": {
+    "fuse-box": "^4.0.0-next.439",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "prettier": "^2.0.5",
+    "terser": "^4.7.0",
+    "typescript": "^3.9.5",
+    "uglify-js": "^3.9.4"
+  },
+  "dependencies": {
+    "@drowzee/biog": "^0.0.0",
+    "@drowzee/notion-mock": "^0.0.12",
+    "@types/node": "^14.0.13",
+    "keycode": "^2.2.0",
+    "konva": "^6.0.0",
+    "rxjs": "^6.5.5",
+    "ts-node": "^8.10.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+  }
+}
