@@ -5,13 +5,16 @@
   "author": "Lars Karbo <mail@larskarbo.no>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node fuse.ts"
+    "start": "ts-node fuse.ts",
+    "build": "ts-node build.ts",
+    "buildandserve": "ts-node build.ts && serve dist -p 6566"
   },
   "devDependencies": {
     "fuse-box": "^4.0.0-next.439",
     "husky": ">=4",
     "lint-staged": ">=10",
     "prettier": "^2.0.5",
+    "serve": "^11.3.2",
     "terser": "^4.7.0",
     "typescript": "^3.9.5",
     "uglify-js": "^3.9.4"
